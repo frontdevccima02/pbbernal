@@ -26,7 +26,8 @@ body {
  
 }
 .bg__gradiente_blue{
-    background: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+    background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
+
 }
 .hidden {
     display: none;
@@ -39,6 +40,9 @@ h2 {
 }
 h4{
     font-size: 1rem;
+}
+.ltt_spa{
+    letter-spacing: 2px;
 }
 /* text-inv{
     font-size: 1.8rem;
@@ -63,7 +67,7 @@ h4{
   font-size: 1.8rem;
 }
 .text-principal{
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: normal;
 }
 
@@ -77,7 +81,66 @@ h4{
     font-size: 1.7rem;
 
 }
+.fs__5 {
+    font-size: 1.3rem;
+}
+.fs_20px{
+    font-size: 16px;
+}
+@media (min-width: 1200px){
+    .fs_20px{
+        font-size: 20px;
+    }
+}
 
+
+
+.bg_header{
+    background-image: url(../images/portada/desktop.jpg);
+    background-position: top center;
+    background-size: cover;
+    /* height: 50rem; */
+}
+.bg_ola{
+    background-image: url(../images/oladesktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-top: 0rem;
+    padding-bottom: 6rem;
+    margin-top: 12rem;
+}
+
+@media (min-width: 768px) {
+    .bg_ola{
+        padding-top: 3.5rem;
+        padding-bottom: 3rem;
+        margin-top: 7rem;
+    }   
+}
+
+@media (min-width: 992px) {
+    .bg_ola{
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        margin-top: 7rem;
+    }   
+}
+@media (min-width: 1200px) {
+    .bg_ola{
+        padding-top: 13rem;
+        padding-bottom: 4rem;
+        margin-top: 0rem;
+    }   
+}
+
+
+
+.bg_ola div{
+    display: flex;
+    flex-direction: column;
+}
 .bg_naranja {
     background-color: rgb(252 234 224);
 }
@@ -158,12 +221,13 @@ h4{
     color: white;
     font-weight: 600;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 3px rgb(26 14 86 / 64%);
     font-size: 1.2rem;
     width: 100%;
     margin-top: 1rem;
 }
-
+.mt_7rem{
+    margin-top: 7rem !important;
+}
 .form-control {
     background-color: #62626600;
     border-radius: 1rem;
@@ -192,18 +256,18 @@ btn-formulario{
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgb(101, 96, 96);
-    background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+    background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
 
 }
 
-.banderin {
+/* .banderin {
 
     width: 7rem;
-    /* margin: auto; */
-    margin-top: 4.4rem;
+    /* margin: auto; 
+    margin-top: 3.4rem;
     float: right;
-    /*! margin-right: 2rem; */
-}
+    ! margin-right: 2rem; *
+ */
 .test-2{
     display: none;
 }
@@ -227,7 +291,7 @@ video {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgb(101, 96, 96);
-    background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+    background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
 
 }
 #formulario_desktop{
@@ -250,7 +314,7 @@ video {
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgb(101, 96, 96);
-        background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+        background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
     }
 }
 
@@ -343,7 +407,8 @@ video {
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgb(101, 96, 96);
-        background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+        background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
+
     }
 }
 
@@ -357,7 +422,8 @@ video {
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgb(101, 96, 96);
-        background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+       background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
+
       }
 
 }
@@ -475,7 +541,7 @@ video {
     border-radius: 50%;
     bottom: 10px;
     right: 10px;
-    padding: 25px;
+    padding: 15px;
     transition: ease 0.3s;
     animation: efecto 1.2s infinite;
     margin: 1rem;
@@ -487,7 +553,7 @@ video {
 }
 
 .boton-telegram {
-    width: 4rem !important;
+    width: 2rem !important;
     transition: ease 1s;
 }
 
@@ -516,9 +582,17 @@ video {
  
 .bg-lotes{
     background-color: rgb(253 244 238);
-
 }
 
+@media(min-width:992px){
+    .bg-lotes{
+        background-color:#fff;
+    }
+    #contenedor{
+        max-width: 1140px;
+
+    }
+}
 .subti-porto {
     font-size: 1.5rem;
 }
@@ -632,13 +706,12 @@ margin: 0 3rem;
 
 .carousel-indicators li {
     
-         background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
-        /* border-radius: 50%; */
-        border-radius: 2rem;
-        /* height: 14px; */
-        width: 3rem;
-        /* padding: 1rem; */
-        height: 0.7rem;
+    background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
+    border-radius: 2rem;
+    /* height: 14px; */
+    width: 3rem;
+    /* padding: 1rem; */
+    height: 0.7rem;
     }
 
 .carousel-indicators .active {
@@ -740,7 +813,7 @@ h4{
   font-size: 1.8rem;
 }
 .text-principal{
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: normal;
 }
 
@@ -756,7 +829,7 @@ h4{
 }
 
 .bg_naranja {
-    background-color: rgb(252 234 224);
+    background-color: rgb(253 244 238);
 }
 
 .FuturaDemi{
@@ -823,8 +896,8 @@ h4{
 .boton {
     color: white;
     font-weight: 600;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 3px rgb(26 14 86 / 64%);
+    letter-spacing: 0.6rem;
+    text-shadow: none;
     font-size: 1.2rem;
     width: 100%;
     margin-top: 1rem;
@@ -858,7 +931,7 @@ btn-formulario{
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgb(101, 96, 96);
-    background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+    background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
 
 }
 
@@ -866,7 +939,7 @@ btn-formulario{
 
     width: 7rem;
     /* margin: auto; */
-    margin-top: 4.4rem;
+    margin-top: 3.4rem;
     float: right;
     /*! margin-right: 2rem; */
 }
@@ -893,7 +966,8 @@ video {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgb(101, 96, 96);
-    background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+    background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
+
 
 }
 #formulario_desktop{
@@ -916,14 +990,15 @@ video {
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgb(101, 96, 96);
-        background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+        background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
+
     }
 }
 
 @media (min-width: 576px) {
     .banderin {
         width: 10rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
         float: right;
     } 
     .fs__2 {
@@ -951,7 +1026,7 @@ video {
     }
     .banderin {
         width: 10rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
         float: right;
     }
     .formcontainer {
@@ -976,7 +1051,7 @@ video {
     }
     .banderin {
         width: 11rem;
-        margin-top: 4.3rem;
+        margin-top: 3.3rem;
         float: right;
         margin-right: 3rem;
       }
@@ -1009,7 +1084,8 @@ video {
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgb(101, 96, 96);
-        background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+        background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
+
     }
 }
 
@@ -1018,12 +1094,13 @@ video {
         margin-top: 5rem;
     }
     .formcontainer {
-        margin-top: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
         background: (0, 0, 0, .1);
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgb(101, 96, 96);
-        background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
+        background-image: linear-gradient(to top, rgb(102 151 181) 0%, rgb(40 41 75));
       }
 
 }
@@ -1039,7 +1116,7 @@ video {
 
     .banderin {
         width: 7rem;
-        margin-top: 1.5rem;
+        margin-top: 0.5rem;
         float: right;
         margin-right: 2rem;
     }
@@ -1057,14 +1134,22 @@ video {
 @media (min-width: 992px) {
     .banderin{
         width: 18rem;
-        margin-top: 1.5rem;
+        margin-top: 0.5rem;
         float: right;
         margin-right: 2rem;
         padding-top: 28px;
     }
 
 }
-
+@media (min-width: 992px) {
+    .banderin{
+        width: 18rem;
+        margin-top: 0.5rem;
+        float: right;
+        margin-right: 2rem;
+        padding-top: 28px;
+    }
+}
 
 
 @media (min-width: 1200px) {
@@ -1072,7 +1157,7 @@ video {
         width: 18rem;
         margin-top: 2.7rem;
         float: left;
-        margin-right: 7rem;
+        margin-left: 13rem;
         /* z-index: 99; */
     }
     .formulario-movil{
@@ -1142,7 +1227,7 @@ video {
     border-radius: 50%;
     bottom: 10px;
     right: 10px;
-    padding: 25px;
+    padding: 15px; 
     transition: ease 0.3s;
     animation: efecto 1.2s infinite;
     margin: 1rem;
@@ -1154,7 +1239,7 @@ video {
 }
 
 .boton-telegram {
-    width: 4rem !important;
+    width: 2rem !important;
     transition: ease 1s;
 }
 
@@ -1168,27 +1253,6 @@ video {
     }
 }
 
-/*---------------loteAA---------------*/
-
-
-.lotes {
-    width: 9rem;
-}
-.imagen-servicio{
-    width: 9rem;
-}
-.iccono{
-    width: 11rem; 
-}
- 
-.bg-lotes{
-    background-color: rgb(253 244 238);
-
-}
-
-.subti-porto {
-    font-size: 1.5rem;
-}
 
 
 /*------------------------------Mapa-------------------------*/
@@ -1212,7 +1276,7 @@ video {
     
 }
 .pt__8px{
-font-size: 1rem;
+font-size: 1.2rem;
 padding-top: 0.5rem;
 }
 .mt__3rem{
@@ -1299,13 +1363,19 @@ margin: 0 3rem;
 
 .carousel-indicators li {
     
-         background-image: linear-gradient(to top, rgb(21 192 221 / 95%) 0%, hsl(254deg 45% 15% / 95%) 99%);
-        /* border-radius: 50%; */
-        border-radius: 2rem;
-        /* height: 14px; */
-        width: 3rem;
-        /* padding: 1rem; */
-        height: 0.7rem;
+background-image: linear-gradient(to left, rgb(73 121 150 / 50%) 0%, rgb(133 136 213));
+    
+/* border-radius: 50%; */
+    
+border-radius: 2rem;
+    
+/* height: 14px; */
+    
+width: 3rem;
+    
+/* padding: 1rem; */
+    
+height: 0.7rem;
     }
 
 .carousel-indicators .active {
@@ -1413,4 +1483,9 @@ footer {
 }
 .navbar{
     box-shadow: unset;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #ffffff00;
 }
